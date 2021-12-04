@@ -1,14 +1,10 @@
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 
-import java.io.File;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -35,6 +31,19 @@ public class Main {
     WebElement cookies = driver.findElement(By.id("btnOverlayCookiesClose"));
     cookies.click();
 
+    //Juegos Switch
+    //pedir ayuda profe no saber como usar los checkboxes
+    /*WebElement switchfilter = driver.findElement(new By.ByXPath("//*[@id=\"search-filters-group-Plataforma\"]/div/label[1]"));
+    switchfilter.click();*/
+    /*wait.timeouts().implicitlyWait(30, SECONDS);*/
+
+    /*Wait<WebDriver> wait30s = new FluentWait<WebDriver>(driver)
+            .withTimeout(Duration.ofSeconds(30));
+    try {
+      wait30s.wait();
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }*/
 
     for (int i = 0; i < 250; i++) {
       JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -43,24 +52,36 @@ public class Main {
     }
 
     List<WebElement> searchItemEdiciones = driver.findElements(new By.ByClassName("search-item"));
+    List<EdicionColeccionista> edicionColeccionistas = new ArrayList<>();
 
-    //Juegos Switch
-    //pedir ayuda profe no saber como usra los checkboxes
-    WebElement switchfilter = driver.findElement(new By.ByTagName("input"));
-    switchfilter.click();
+    System.out.println("Todas las Ediciones");
+    String imagen;
+    String nombre;
+    String tipo;
+    String precio;
 
-    System.out.println("Juegos Switch");
     for (WebElement searchItemSwitch : searchItemEdiciones) {
+
       try {
-      System.out.println(searchItemSwitch.findElement(new By.ByClassName("title")).getText());
-      System.out.println(searchItemSwitch.findElement(new By.ByClassName("buy--type")).getText());
-      System.out.println(searchItemSwitch.findElement(new By.ByClassName("buy--price")).getText());
-      System.out.println(searchItemSwitch.findElement(new By.ByTagName("img")).getAttribute("src"));
+        nombre = searchItemSwitch.findElement(new By.ByClassName("title")).getText();
+        tipo = searchItemSwitch.findElement(new By.ByClassName("buy--type")).getText();
+        precio = searchItemSwitch.findElement(new By.ByClassName("buy--price")).getText();
+        imagen = searchItemSwitch.findElement(new By.ByTagName("img")).getAttribute("src");
+
+        System.out.println(nombre);
+        System.out.println(tipo);
+        System.out.println(precio);
+        System.out.println(imagen);
+
+        edicionColeccionistas.add(new EdicionColeccionista(nombre, tipo, precio, imagen));
+
       } catch(Exception e){
         System.out.println("ya no hay mas");
         System.out.println(searchItemEdiciones.size());
       }
       System.out.println();
     }
+    Registro registro = new Registro();
+    registro.guardarTodosLosDatos(edicionColeccionistas);
   }
 }
