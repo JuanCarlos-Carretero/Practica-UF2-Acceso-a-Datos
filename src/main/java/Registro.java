@@ -1,7 +1,4 @@
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.List;
 
 public class Registro {
@@ -9,18 +6,18 @@ public class Registro {
     File file = new File(ruta);
     public void guardarTodosLosDatos(List<EdicionColeccionista> edicionesColeccionista) {
         file.delete();
-        ObjectOutputStream oos;
+        BufferedWriter bw;
         try {
-            oos = new ObjectOutputStream(new FileOutputStream(file));
+            bw = new BufferedWriter(new FileWriter(file));
 
             for (EdicionColeccionista edicionColeccionista: edicionesColeccionista) {
                 try {
-                    oos.writeObject((EdicionColeccionista) (edicionColeccionista));
+                    bw.write(edicionColeccionista.nombre + " - " + edicionColeccionista.precio + " - " + edicionColeccionista.tipo + " - " + edicionColeccionista.imagen + "\n");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            oos.close();
+            bw.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
