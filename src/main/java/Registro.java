@@ -12,7 +12,7 @@ public class Registro {
 
             for (EdicionColeccionista edicionColeccionista: edicionesColeccionista) {
                 try {
-                    bw.write(edicionColeccionista.nombre + " - " + edicionColeccionista.precio + " - " + edicionColeccionista.tipo + " - " + edicionColeccionista.imagen + "\n");
+                    bw.write(edicionColeccionista.nombre + ", " + edicionColeccionista.precio + ", " + edicionColeccionista.tipo + ", " + edicionColeccionista.imagen + "\n");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

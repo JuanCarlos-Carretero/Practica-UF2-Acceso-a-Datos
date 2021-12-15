@@ -60,13 +60,13 @@ public class Main {
     String tipo;
     String precio;
 
-    for (WebElement searchItemSwitch : searchItemEdiciones) {
+    for (WebElement searchItem : searchItemEdiciones) {
 
       try {
-        nombre = searchItemSwitch.findElement(new By.ByClassName("title")).getText();
-        tipo = searchItemSwitch.findElement(new By.ByClassName("buy--type")).getText();
-        precio = searchItemSwitch.findElement(new By.ByClassName("buy--price")).getText();
-        imagen = searchItemSwitch.findElement(new By.ByTagName("img")).getAttribute("src");
+        nombre = searchItem.findElement(new By.ByClassName("title")).getText();
+        tipo = searchItem.findElement(new By.ByClassName("buy--type")).getText();
+        precio = searchItem.findElement(new By.ByClassName("buy--price")).getText();
+        imagen = searchItem.findElement(new By.ByTagName("img")).getAttribute("src");
 
         System.out.println(nombre);
         System.out.println(tipo);
