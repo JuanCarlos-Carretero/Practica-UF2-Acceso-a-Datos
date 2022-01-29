@@ -3,6 +3,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.*;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +11,8 @@ import java.util.List;
 public class Main {
 
   public static void main(String[] args) {
+    File file = new File("src/csv/opencsv.csv");
+    CSVWriterEx csv;
     System.out.println(System.getenv("PATH"));
     System.out.println(System.getenv("HOME"));
     // System.out.println(System.getenv(""));
@@ -81,7 +84,7 @@ public class Main {
       }
       System.out.println();
     }
-    Registro registro = new Registro();
-    registro.guardarTodosLosDatos(edicionColeccionistas);
+    //Escribo todo en un csv desde el metodo constructor
+    csv = new CSVWriterEx(edicionColeccionistas, file);
   }
 }
