@@ -11,13 +11,16 @@ import java.util.List;
 public class Main {
 
   public static void main(String[] args) {
-    File file = new File("src/csv/opencsv.csv");
+    File fileCSV = new File("src/Documents/opencsv.csv");
+    File fileJAVAXB = new File("src/Documents/edicionColeccionistaList.xml");
     CSVWriterEx csv;
+    Javaxb javaxb;
+
     System.out.println(System.getenv("PATH"));
     System.out.println(System.getenv("HOME"));
     // System.out.println(System.getenv(""));
 
-    System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
+    System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
     // File pathBinary = new File("src/main/resources/firefox");
     // FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);
     // DesiredCapabilities desired = new DesiredCapabilities();
@@ -34,20 +37,6 @@ public class Main {
     WebElement cookies = driver.findElement(By.id("btnOverlayCookiesClose"));
     cookies.click();
 
-    //Juegos Switch
-    //pedir ayuda profe no saber como usar los checkboxes
-    /*WebElement switchfilter = driver.findElement(new By.ByXPath("//*[@id=\"search-filters-group-Plataforma\"]/div/label[1]"));
-    switchfilter.click();*/
-    /*wait.timeouts().implicitlyWait(30, SECONDS);*/
-
-    /*Wait<WebDriver> wait30s = new FluentWait<WebDriver>(driver)
-            .withTimeout(Duration.ofSeconds(30));
-    try {
-      wait30s.wait();
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    }*/
-
     for (int i = 0; i < 250; i++) {
       JavascriptExecutor js = (JavascriptExecutor) driver;
       js.executeScript("window.scrollBy(0,1000)", "");
@@ -62,6 +51,7 @@ public class Main {
     String nombre;
     String tipo;
     String precio;
+    String plataforma;
 
     for (WebElement searchItem : searchItemEdiciones) {
 
@@ -70,13 +60,16 @@ public class Main {
         tipo = searchItem.findElement(new By.ByClassName("buy--type")).getText();
         precio = searchItem.findElement(new By.ByClassName("buy--price")).getText();
         imagen = searchItem.findElement(new By.ByTagName("img")).getAttribute("src");
+        plataforma = searchItem.findElement(new By.ByClassName("info-wrap")).getText();
 
         System.out.println(nombre);
         System.out.println(tipo);
         System.out.println(precio);
         System.out.println(imagen);
+        System.out.println(plataforma);
 
-        edicionColeccionistas.add(new EdicionColeccionista(nombre, tipo, precio, imagen));
+        edicionColeccionistas.add(new EdicionColeccionista(nombre, tipo, precio, imagen, plataforma));
+        javaxb = new Javaxb(new EdicionColeccionista(nombre, tipo, precio, imagen, plataforma), fileJAVAXB);
 
       } catch(Exception e){
         System.out.println("ya no hay mas");
@@ -85,6 +78,8 @@ public class Main {
       System.out.println();
     }
     //Escribo todo en un csv desde el metodo constructor
-    csv = new CSVWriterEx(edicionColeccionistas, file);
+    csv = new CSVWriterEx(edicionColeccionistas, fileCSV);
+
+
   }
 }
