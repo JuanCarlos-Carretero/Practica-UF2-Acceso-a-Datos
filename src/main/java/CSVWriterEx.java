@@ -3,10 +3,10 @@ import java.io.*;
 import java.util.List;
 
 public class CSVWriterEx {
-    CSVWriterEx(List<EdicionColeccionista> edicionColeccionistas, File file){
+    CSVWriterEx(List<Videojuego> edicionColeccionistas, File file){
         CSVWriter csvWriter;
         String[] entries =  new String[4];
-        for (EdicionColeccionista ec: edicionColeccionistas) {
+        for (Videojuego ec: edicionColeccionistas) {
             entries[0]=(ec.nombre);
             entries[1]=(ec.precio);
             entries[2]=(ec.imagen);
