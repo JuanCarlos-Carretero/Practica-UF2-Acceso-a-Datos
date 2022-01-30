@@ -1,28 +1,20 @@
 public class Mensaje {
+    Util util = new Util();
     void mostrarError(String texto){
-        printBefore();
+        util.saltoLineaX(1);
         System.out.println("\033[31m" + texto + "\033[0m");
-        printAfter();
+        util.saltoLineaX(1);
     }
 
     void mostrarWarn(String texto){
-        printBefore();
+        util.saltoLineaX(1);
         System.out.println("\033[33m" + texto + "\033[0m");
-        printAfter();
+        util.saltoLineaX(1);
     }
 
     void mostrarInfo(String texto){
-        printBefore();
+        util.saltoLineaX(1);
         System.out.println("\033[36m" + texto + "\033[0m");
-        printAfter();
-    }
-
-    void printBefore(){
-        System.out.println();
-    }
-
-    static void printAfter(){
-        System.out.println();
-        System.out.println();
+        util.saltoLineaX(1);
     }
 }

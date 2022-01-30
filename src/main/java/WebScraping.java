@@ -13,18 +13,21 @@ import java.util.List;
 
 public class WebScraping {
     WebScraping(){
+        Titulo titulo = new Titulo();
+        SistemaOperativo so = new SistemaOperativo();
         JavaScripts JS = new JavaScripts();
-        File fileCSV = new File("src/Documents/opencsv.csv");
-        File fileJAXB = new File("src/Documents/edicionColeccionistaList.xml");
         Mensaje msn = new Mensaje();
+
         CSVWriterEx csv;
         JAXB jaxb;
 
+        File fileCSV = new File("src/Documents/opencsv.csv");
+        File fileJAXB = new File("src/Documents/edicionColeccionistaList.xml");
+
+        titulo.mostrar("WebScraping Juanka");
         msn.mostrarInfo("Esta app necesita del navegador Mozilla Firefox si no lo tiene debera descargarlo.");
-        System.out.println();
 
         //Aqui elijo cual sistema operativo estoy usando
-        SistemaOperativo so = new SistemaOperativo();
         System.out.println("¿Cual es tu Sistema Operativo(SO)?");
         WebDriver driver = so.elegirSO();
 
