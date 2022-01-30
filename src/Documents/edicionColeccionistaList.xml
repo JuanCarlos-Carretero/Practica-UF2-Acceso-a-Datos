@@ -638,20 +638,6 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/174/174925.png</Imagen>
-        <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - Shiny Edition</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>149 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/174/174926.png</Imagen>
-        <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - Shiny Edition</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
-        <Precio>149 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/174/174929.png</Imagen>
         <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - F.U.N Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
@@ -663,6 +649,20 @@
         <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - F.U.N Edition</Nombre>
         <Plataforma>XBOX ONE</Plataforma>
         <Precio>219 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/174/174925.png</Imagen>
+        <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - Shiny Edition</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>149 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/174/174926.png</Imagen>
+        <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - Shiny Edition</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>149 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -687,6 +687,13 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/178/178598.png</Imagen>
+        <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista (REACONDICIONADO)</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>69 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/178/178886.png</Imagen>
         <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista (REACONDICIONADO)</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
@@ -701,17 +708,17 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/178/178598.png</Imagen>
-        <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista (REACONDICIONADO)</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>69 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/170/170733.png</Imagen>
         <Nombre>NeverWinter Nights Enhanced Edition Edición Coleccionista</Nombre>
         <Plataforma>XBOX ONE</Plataforma>
         <Precio>79 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/189/189720.png</Imagen>
+        <Nombre>NeverWinter Nights Enhanced Edition Edición Coleccionista (REACONDICIONADO)</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -725,13 +732,6 @@
         <Imagen>https://media.game.es/COVERV2/3D_L/184/184862.png</Imagen>
         <Nombre>NeverWinter Nights Enhanced Edition Edición Coleccionista (REACONDICIONADO)</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>69 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/189/189720.png</Imagen>
-        <Nombre>NeverWinter Nights Enhanced Edition Edición Coleccionista (REACONDICIONADO)</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
         <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
