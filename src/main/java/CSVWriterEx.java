@@ -5,16 +5,18 @@ import java.util.List;
 public class CSVWriterEx {
     CSVWriterEx(List<Videojuego> edicionColeccionistas, File file){
         CSVWriter csvWriter;
-        String[] entries =  new String[4];
+        String[] infoJuegos =  new String[5];
+        file.delete();
         for (Videojuego ec: edicionColeccionistas) {
-            entries[0]=(ec.nombre);
-            entries[1]=(ec.precio);
-            entries[2]=(ec.imagen);
-            entries[3]=(ec.tipo);
+            infoJuegos[0] = ec.nombre;
+            infoJuegos[1] = ec.precio;
+            infoJuegos[2] = ec.tipo;
+            infoJuegos[3] = ec.imagen;
+            infoJuegos[4] = ec.plataforma;
 
             try {
                 csvWriter = new CSVWriter(new FileWriter(file, true));
-                csvWriter.writeNext(entries);
+                csvWriter.writeNext(infoJuegos);
                 csvWriter.close();
             } catch (IOException e) {
                 e.printStackTrace();

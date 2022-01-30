@@ -16,22 +16,20 @@ public class WebScraping {
         JavaScripts JS = new JavaScripts();
         File fileCSV = new File("src/Documents/opencsv.csv");
         File fileJAXB = new File("src/Documents/edicionColeccionistaList.xml");
+        Mensaje msn = new Mensaje();
         CSVWriterEx csv;
-        JaXB jaxb;
+        JAXB jaxb;
 
+        msn.mostrarInfo("Esta app necesita del navegador Mozilla Firefox si no lo tiene debera descargarlo.");
+        System.out.println();
+
+        //Aqui elijo cual sistema operativo estoy usando
+        SistemaOperativo so = new SistemaOperativo();
+        System.out.println("¿Cual es tu Sistema Operativo(SO)?");
+        WebDriver driver = so.elegirSO();
 
         System.out.println(System.getenv("PATH"));
         System.out.println(System.getenv("HOME"));
-        // System.out.println(System.getenv(""));
-
-        System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
-        // File pathBinary = new File("src/main/resources/firefox");
-        // FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);
-        // DesiredCapabilities desired = new DesiredCapabilities();
-        FirefoxOptions options = new FirefoxOptions();
-        // desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
-        WebDriver driver = new FirefoxDriver(options);
-        driver.get("https://www.game.es/buscar/edicion-coleccionista/o=7&cf=000a+:GIDSb_aa0453:8b,New:-6b&ca=0000000006:1:GIDS");
 
         // Espera a que la pagina carge y las cookies aparezcan
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -41,7 +39,7 @@ public class WebScraping {
         WebElement cookies = driver.findElement(By.id("btnOverlayCookiesClose"));
         cookies.click();
 
-        JS.scrollWindow(200, driver, wait);
+        JS.scrollWindow(250, driver, wait);
 
         List<WebElement> searchItemEdiciones = driver.findElements(new By.ByClassName("search-item"));
         List<Videojuego> edicionColeccionistas = new ArrayList<>();
@@ -60,18 +58,18 @@ public class WebScraping {
                 tipo = searchItem.findElement(new By.ByClassName("buy--type")).getText();
                 precio = searchItem.findElement(new By.ByClassName("buy--price")).getText();
                 imagen = searchItem.findElement(new By.ByTagName("img")).getAttribute("src");
-                plataforma = searchItem.findElement(new By.ByClassName("info-wrap")).getText();
+                plataforma = searchItem.findElement(new By.ByClassName("btn-sm")).getText();
 
                 System.out.println(nombre);
-                System.out.println(tipo);
                 System.out.println(precio);
+                System.out.println(tipo);
                 System.out.println(imagen);
                 System.out.println(plataforma);
 
                 Videojuego ec = new Videojuego();
                 ec.setNombre(nombre);
-                ec.setTipo(tipo);
                 ec.setPrecio(precio);
+                ec.setTipo(tipo);
                 ec.setImagen(imagen);
                 ec.setPlataforma(plataforma);
 
@@ -79,8 +77,7 @@ public class WebScraping {
 
 
             } catch(Exception e){
-                System.out.println("ya no hay mas");
-                System.out.println(searchItemEdiciones.size());
+                System.out.println("Hay " + searchItemEdiciones.size() + " Ediciones Coleccionistas.");
             }
             System.out.println();
         }
@@ -88,10 +85,8 @@ public class WebScraping {
         csv = new CSVWriterEx(edicionColeccionistas, fileCSV);
 
         //Recorro la lista y escribo en un xml
-        for (Videojuego ec: edicionColeccionistas) {
-            jaxb = new JaXB(ec.nombre,ec.tipo,ec.precio,ec.imagen,ec.plataforma, fileJAXB);
-        }
+        jaxb = new JAXB(edicionColeccionistas, fileJAXB);
 
-
+        driver.close();
     }
 }

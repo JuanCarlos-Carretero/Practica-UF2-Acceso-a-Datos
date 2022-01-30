@@ -16,8 +16,12 @@ public class EdicionesColeccionistas {
     }
 
     @XmlElement(name = "VideoJuego")
-    public void setVJ(List<Videojuego> datos) {
+    public void setEC(List<Videojuego> datos) {
         this.datos = datos;
+    }
+
+    public void addEC(Videojuego vj){
+        this.datos.add(vj);
     }
 }
 
