@@ -1,18 +1,17 @@
-import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.support.ui.*;
-
-import java.io.File;
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-
+/**
+ * La clase Main es la primera que se va a ejecutar.
+ * @version 5.0, 30/01/22
+ * @author Juan Carlos Carretero Roldan
+ */
 public class Main {
 static Scanner scan = new Scanner(System.in);
 
+  /**
+   * Este metodo permite lanzar la app.
+   */
   public static void main(String[] args) {
-    WebScraping webScraping = new WebScraping();
+    WebScraping WS = new WebScraping();
+    WS.run();
   }
 }

@@ -1,4 +1,11 @@
+/**
+ * Esta clase crea un titulo para la app.
+ */
 public class Titulo {
+    /**
+     * El metodo mostrar() sirve para mostrar por terminal un titulo.
+     * @param titulo recibe un texto para colocarlo como titulo dentro de la app.
+     */
     void mostrar(String titulo){
         Util util = new Util();
 

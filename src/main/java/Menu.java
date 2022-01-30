@@ -1,4 +1,12 @@
+/**
+ * Esta clase sirve para crear menus.
+ */
 public class Menu {
+    /**
+     * Este metodo sirve para crear las opciones del menu.
+     * @param opciones le paso un arraylist con las opciones a mostrar.
+     * @return Retorna lo que haya escrito el usuario.
+     */
     String elegirOpcion(String[] opciones){
 
         boolean seguirPidiendo = true;

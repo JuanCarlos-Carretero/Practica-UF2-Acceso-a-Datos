@@ -1,6 +1,13 @@
+/**
+ * Esta clase es un cajon desastre, aqui es donde se mete todo lo que no tiene nombre propio y que no tiene sentido meter en ninguna otra clase.
+ */
 public class Util {
-    public void saltoLineaX(int x){
-        for (int i = 0; i < x; i++) {
+    /**
+     * Este metodo sirve para hacer saltos de linea.
+     * @param veces Indicamos las veces que queremos que haga el salto de linea.
+     */
+    public void saltoLineaX(int veces){
+        for (int i = 0; i < veces; i++) {
             System.out.println();
         }
     }

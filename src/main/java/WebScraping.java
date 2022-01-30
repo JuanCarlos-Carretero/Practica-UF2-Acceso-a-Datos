@@ -1,8 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -11,26 +9,34 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WebScraping {
-    WebScraping(){
-        Titulo titulo = new Titulo();
-        SistemaOperativo so = new SistemaOperativo();
-        JavaScripts JS = new JavaScripts();
-        Mensaje msn = new Mensaje();
+/**
+ * Esta clase hace el WebScrapping.
+ */
+public class WebScraping implements Runnable {
+    Titulo titulo = new Titulo();
+    SistemaOperativo so = new SistemaOperativo();
+    JavaScripts JS = new JavaScripts();
+    Mensaje msn = new Mensaje();
 
-        CSVWriterEx csv;
-        JAXB jaxb;
+    CSVWriterEx csv;
+    JAXB jaxb;
 
-        File fileCSV = new File("src/Documents/opencsv.csv");
-        File fileJAXB = new File("src/Documents/edicionColeccionistaList.xml");
+    File fileCSV = new File("src/Documents/opencsv.csv");
+    File fileJAXB = new File("src/Documents/edicionColeccionistaList.xml");
 
+    /**
+     * Este metodo es llamado en la clase Main dentro del metodo main para iniciar la app.
+     */
+    @Override
+    public void run() {
         titulo.mostrar("WebScraping Juanka");
         msn.mostrarInfo("Esta app necesita del navegador Mozilla Firefox si no lo tiene debera descargarlo.");
 
-        //Aqui elijo cual sistema operativo estoy usando
+        // Aqui elijo cual sistema operativo estoy usando
         System.out.println("¿Cual es tu Sistema Operativo(SO)?");
         WebDriver driver = so.elegirSO();
 
+        // Aqui imprime la ruta del pc y la del usuario
         System.out.println(System.getenv("PATH"));
         System.out.println(System.getenv("HOME"));
 
@@ -38,20 +44,21 @@ public class WebScraping {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.elementToBeClickable(By.id("btnOverlayCookiesClose")));
 
-        // Busca y dale a click en las cookies
+        // Busca y dale a click en cerrar en las cookies
         WebElement cookies = driver.findElement(By.id("btnOverlayCookiesClose"));
         cookies.click();
 
+        // Hago scroll en el navegador
         JS.scrollWindow(250, driver, wait);
 
         List<WebElement> searchItemEdiciones = driver.findElements(new By.ByClassName("search-item"));
         List<Videojuego> edicionColeccionistas = new ArrayList<>();
 
         System.out.println("Todas las Ediciones");
-        String imagen;
         String nombre;
         String tipo;
         String precio;
+        String imagen;
         String plataforma;
 
         for (WebElement searchItem : searchItemEdiciones) {
@@ -84,7 +91,7 @@ public class WebScraping {
             }
             System.out.println();
         }
-        //Escribo todo en un csv desde el metodo constructor
+        // Escribo todo en un csv desde el metodo constructor
         csv = new CSVWriterEx(edicionColeccionistas, fileCSV);
 
         //Recorro la lista y escribo en un xml

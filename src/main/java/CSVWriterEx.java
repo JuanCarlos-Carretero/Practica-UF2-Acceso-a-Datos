@@ -2,7 +2,15 @@ import com.opencsv.CSVWriter;
 import java.io.*;
 import java.util.List;
 
+/**
+ * Esta clase sirve para crear el csv.
+ */
 public class CSVWriterEx {
+    /**
+     * Este metodo constructor sirve para crear el csv
+     * @param edicionColeccionistas Recibe una lista con la cual va a trabajar para escribir en el csv
+     * @param file Recibe un file con el cual va a trabajar a la hora de borrar el archivo o a la g¡hora de crear/escribir dentro de el.
+     */
     CSVWriterEx(List<Videojuego> edicionColeccionistas, File file){
         CSVWriter csvWriter;
         String[] infoJuegos =  new String[5];
