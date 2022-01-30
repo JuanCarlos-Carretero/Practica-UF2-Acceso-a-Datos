@@ -1,14 +1,14 @@
 # WebScrapping Game
 >*Mi proyecto consiste en hacer WebScrapping de la Web de Game. En esta Web busco las Ediciones Coleccionistas que tienen disponibles y guardo toda la informacion de estas.*
 
-###Informacion a guardar:
+### Informacion a guardar:
 - Nombre.
 - Precio.
 - Tipo de compra (si es Reserva o Compra).
 - Imagen.
 - Plataforma.
 
-##Objetivos:
+## Objetivos:
 
 - Esta informacion la guardo en objetos Java.
 - Despues la voy a guardar en un archivo csv gracias a la libreria OpenCSV.
