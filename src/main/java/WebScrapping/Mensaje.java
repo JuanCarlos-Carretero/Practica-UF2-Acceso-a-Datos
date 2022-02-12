@@ -1,3 +1,5 @@
+package WebScrapping;
+
 /**
  * Esta clase es para crear mensajes predeterminados de colores por consola.
  */

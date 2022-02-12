@@ -1,6 +1,8 @@
+package WebScrapping;
+
 import java.util.Scanner;
 /**
- * La clase Main es la primera que se va a ejecutar.
+ * La clase WebScrapping.Main es la primera que se va a ejecutar.
  * @version 5.0, 30/01/22
  * @author Juan Carlos Carretero Roldan
  */

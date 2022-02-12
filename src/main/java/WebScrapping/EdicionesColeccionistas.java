@@ -1,3 +1,5 @@
+package WebScrapping;
+
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
@@ -7,7 +9,7 @@ import java.util.List;
 /**
  * Esta clase la he creado para asi poder crear el XML mas facilmente, aqui es donde guardo la lista de Ediciones Coleccionista.
  */
-@XmlRootElement(name="EdicionesColeccionistas")
+@XmlRootElement(name="WebScrapping.EdicionesColeccionistas")
 public class EdicionesColeccionistas {
     List<Videojuego> videojuegos;
     /**

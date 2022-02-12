@@ -12,5 +12,5 @@
 
 - Esta informacion la guardo en objetos Java.
 - Despues la voy a guardar en un archivo csv gracias a la libreria OpenCSV.
-- Ademas esta informacion la voy a guardar como XML gracias a la libreria JAXB.
+- Ademas esta informacion la voy a guardar como XML gracias a la libreria WebScrapping.JAXB.
 - Todo esto estara comentado y ademas hay que usar JavaDoc para comentar las Clases y sus Metodos. Esto generara un documento html.

@@ -1,3 +1,5 @@
+package WebScrapping;
+
 /**
  * Esta clase sirve para crear menus.
  */

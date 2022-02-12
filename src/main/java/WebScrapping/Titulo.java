@@ -1,3 +1,5 @@
+package WebScrapping;
+
 /**
  * Esta clase crea un titulo para la app.
  */

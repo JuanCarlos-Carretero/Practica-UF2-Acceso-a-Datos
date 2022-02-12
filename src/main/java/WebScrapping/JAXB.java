@@ -1,3 +1,5 @@
+package WebScrapping;
+
 import jakarta.xml.bind.*;
 
 import java.io.File;

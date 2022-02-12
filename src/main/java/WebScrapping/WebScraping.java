@@ -1,3 +1,5 @@
+package WebScrapping;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,11 +27,11 @@ public class WebScraping implements Runnable {
     File fileJAXB = new File("src/Documents/edicionColeccionistaList.xml");
 
     /**
-     * Este metodo es llamado en la clase Main dentro del metodo main para iniciar la app.
+     * Este metodo es llamado en la clase WebScrapping.Main dentro del metodo main para iniciar la app.
      */
     @Override
     public void run() {
-        titulo.mostrar("WebScraping Juanka");
+        titulo.mostrar("WebScrapping.WebScraping Juanka");
         msn.mostrarInfo("Esta app necesita del navegador Mozilla Firefox si no lo tiene debera descargarlo.");
 
         // Aqui elijo cual sistema operativo estoy usando
