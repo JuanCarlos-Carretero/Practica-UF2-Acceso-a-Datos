@@ -1,5 +1,8 @@
 package BaseDeDatos;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.sql.*;
 import java.util.Locale;
 import java.util.Scanner;
@@ -24,6 +27,101 @@ public class EdicionesController {
     }
 
     /**
+     * Este metodo sirve para rellenar datos de un fichero hacia las tablas de base de datos
+     */
+    public void rellenar() {
+        String[] datos;
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(new File("src/Documents/opencsv.csv")));
+            String linia;
+
+            Statement stp = connection.createStatement();
+            stp.executeUpdate("CREATE TABLE IF NOT EXISTS plataforma(idplataforma smallint primary key, nombre varchar(20))");
+            stp.executeUpdate("CREATE TABLE IF NOT EXISTS videojuego(nombre text, tipocompra varchar(20), precio varchar(15), imagen text, idplataforma smallint references plataforma(idplataforma))");
+
+            while ((linia = br.readLine()) != null) {
+                datos = linia.split(",");
+
+                try {
+                    String nom = datos[0];
+                    String precio = datos[1];
+                    String tipoCompra = datos[2];
+                    String imagen = datos[3];
+                    String plataforma = datos[4];
+
+                    int idPlataforma;
+
+                    switch (plataforma) {
+                        case "\"PLAYSTATION 4\"":
+                            idPlataforma = 1;
+                            break;
+                        case "\"PLAYSTATION 5\"":
+                            idPlataforma = 2;
+                            break;
+                        case "\"PC SOFTWARE\"":
+                            idPlataforma = 3;
+                            break;
+                        case "\"XBOX ONE\"":
+                            idPlataforma = 4;
+                            break;
+                        case "\"NINTENDO SWITCH\"":
+                            idPlataforma = 5;
+                            break;
+                        default:
+                            idPlataforma = 0;
+                            break;
+                    }
+
+                    String sql = "SELECT COUNT(idplataforma) as size FROM plataforma WHERE idplataforma = ?";
+                    PreparedStatement pst = connection.prepareStatement(sql);
+                    pst.setInt(1, idPlataforma);
+
+                    ResultSet rs = pst.executeQuery();
+
+                    while (rs.next()) {
+                        int rsSize = rs.getInt("size");
+
+                        if((rsSize == 0)){
+                            try {
+                                sql = "INSERT INTO plataforma(idplataforma, nombre) VALUES (?,?)";
+
+                                pst = connection.prepareStatement(sql);
+                                pst.setInt(1, idPlataforma);
+                                pst.setString(2, plataforma);
+
+                                pst.executeUpdate();
+                                pst.close();
+                                System.out.println(idPlataforma);
+                            }catch(SQLException e){
+                                }
+                        } else{
+                            System.out.println("Esa plataforma ya esta en la base de datos");
+                        }
+                    }
+
+                    sql = "INSERT INTO videojuego(nombre, tipoCompra, precio, imagen, idplataforma) VALUES (?,?,?,?,?)";
+
+                    pst = connection.prepareStatement(sql);
+                    pst.setString(1, nom);
+                    pst.setString(2, precio);
+                    pst.setString(3, tipoCompra);
+                    pst.setString(4, imagen);
+                    pst.setInt(5, idPlataforma);
+
+                    pst.executeUpdate();
+                    pst.close();
+
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        } catch (Exception e) {
+            e.getStackTrace();
+        }
+    }
+
+    /**
      * Este metodo sirve para crear un videojuego
      */
     public void crearEdicionColeccionista() {
@@ -37,44 +135,92 @@ public class EdicionesController {
             System.out.println("Precio: (Ejemplo; 19 '99 €");
             String precio = scan.nextLine();
 
-            System.out.println("Tipo: (RESERVA o COMPRAR)");
-            String tipo = scan.nextLine().toUpperCase(Locale.ROOT);
+            System.out.println("Tipo:");
+            String[] opciones = {"RESERVA", "COMPRA"};
+            int opcion = menu.elegirOpcion(opciones);
+            String tipoCompra = null;
 
-            System.out.println("Imagen:");
-            String imagen = scan.nextLine();
+            switch (opcion){
+                case 1:
+                    tipoCompra = "\"RESERVA\"";
+                    break;
+                case 2:
+                    tipoCompra = "\"COMPRA\"";
+                    break;
+            }
+
+            System.out.println("Imagen: (Insertar enlace a la imagen)");
+            String imagen = "\"" + scan.nextLine() + "\"";
 
             System.out.println("Plataforma:");
-            String plataforma = scan.nextLine().toUpperCase(Locale.ROOT);
+            opciones = new String[]{"PLAYSTATION 4", "PLAYSTATION 5", "PC SOFTWARE", "XBOX ONE", "NINTENDO SWITCH"};
+            opcion = menu.elegirOpcion(opciones);
+            int idPlataforma = 0;
+            String plataforma = null;
+
+            switch(opcion){
+                case 1:
+                    idPlataforma = 1;
+                    plataforma = "\"PLAYSTATION 4\"";
+                    break;
+                case 2:
+                    idPlataforma = 2;
+                    plataforma = "\"PLAYSTATION 5\"";
+                    break;
+                case 3:
+                    idPlataforma = 3;
+                    plataforma = "\"PC SOFTWARE\"";
+                    break;
+                case 4:
+                    idPlataforma = 4;
+                    plataforma = "\"XBOX ONE\"";
+                    break;
+                case 5:
+                    idPlataforma = 5;
+                    plataforma = "\"NINTENDO SWITCH\"";
+                    break;
+            }
 
             String sql = "INSERT INTO videojuego " +
-                    "(nom, precio, imagen) VALUES (?,?,?)";
+                    "(nom,tipocompra,precio,imagen,idplataforma) VALUES (?,?,?,?,?)";
 
             PreparedStatement pst = connection.prepareStatement(sql);
             pst.setString(1, nombre);
-            pst.setString(2, precio);
-            pst.setString(3, imagen);
+            pst.setString(2,tipoCompra);
+            pst.setString(3, precio);
+            pst.setString(4, imagen);
+            pst.setInt(5, idPlataforma);
 
             pst.executeUpdate();
 
             pst.close();
 
-            sql = "INSERT INTO tipo " +
-                    "(tipo) VALUES (?)";
+            sql = "SELECT COUNT(idplataforma) as size FROM plataforma WHERE idplataforma = ?";
             pst = connection.prepareStatement(sql);
-            pst.setString(1, tipo);
+            pst.setInt(1, idPlataforma);
 
-            pst.executeUpdate();
+            ResultSet rs = pst.executeQuery();
 
-            pst.close();
+            while (rs.next()) {
+                int rsSize = rs.getInt("size");
 
-            sql = "INSERT INTO plataforma " +
-                    "(plataforma) VALUES (?)";
-            pst = connection.prepareStatement(sql);
-            pst.setString(1, plataforma);
+                if((rsSize == 0)){
+                    try {
+                        sql = "INSERT INTO plataforma(idplataforma, nombre) VALUES (?,?)";
 
-            pst.executeUpdate();
+                        pst = connection.prepareStatement(sql);
+                        pst.setInt(1, idPlataforma);
+                        pst.setString(2, plataforma);
 
-            pst.close();
+                        pst.executeUpdate();
+                        pst.close();
+                        System.out.println(idPlataforma);
+                    }catch(SQLException e){
+                    }
+                } else{
+                    System.out.println("Esa plataforma ya esta en la base de datos");
+                }
+            }
 
         }catch (SQLException e){
             e.printStackTrace();
@@ -82,12 +228,13 @@ public class EdicionesController {
     }
 
     /**
-     * Este metodo sirve para borrar la tabla videojuego
+     * Este metodo sirve para borrar las tablas dentro de la base de edatos
      */
     public void borrarTablas() {
         try {
             Statement st = connection.createStatement();
             st.executeUpdate("DROP table videojuego");
+            st.executeUpdate("DROP table plataforma");
             st.close();
 
         } catch (SQLException e) {

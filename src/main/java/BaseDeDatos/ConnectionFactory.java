@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 /**
- * Esta clase sirve para hacer las conecciones
+ * Esta clase sirve para hacer las conecsiones
  */
 public class ConnectionFactory {
     // init database constants
@@ -32,7 +32,7 @@ public class ConnectionFactory {
     private Properties properties;
 
     /**
-     * Es un constructor para iniciar la coneccion
+     * Es un constructor para iniciar la conecsion
      */
     private ConnectionFactory() {
         super();
@@ -40,7 +40,7 @@ public class ConnectionFactory {
     }
 
     /**
-     * Esto para pillar el Instance
+     * Esto es para pillar el Instance
      * @return devuelve el Instance
      */
     public static ConnectionFactory getInstance() {
@@ -76,7 +76,7 @@ public class ConnectionFactory {
     }
 
     /**
-     * Esto para crear los properties
+     * Esto es para crear los properties
      * @return devuelve el properties ya creado
      */
     private Properties getProperties() {
@@ -91,7 +91,7 @@ public class ConnectionFactory {
 
     /**
      * Esto es para conectar
-     * @return devuelve la coneccion
+     * @return devuelve la conecsion
      */
     public Connection connect() {
         if (connection == null) {
@@ -125,7 +125,7 @@ public class ConnectionFactory {
     }
 
     /**
-     * Esto para desconectar la coneccion
+     * Esto es para desconectar la conecsion
      */
     public void disconnect() {
         if (connection != null) {
