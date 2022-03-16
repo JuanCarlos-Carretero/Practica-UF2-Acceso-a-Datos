@@ -2,9 +2,18 @@ package BaseDeDatos;
 
 import java.sql.Connection;
 import java.util.Scanner;
+/**
+ * La clase Main es la primera que se va a ejecutar.
+ * @version 5.0, 30/01/22
+ * @author Juan Carlos Carretero Roldan
+ */
 
 public class Main {
     public static Scanner scan = new Scanner(System.in);
+
+    /**
+     * Este metodo permite lanzar la app.
+     */
     public static void main(String[] args) {
         Menu menu = new Menu();
         Titulo titulo = new Titulo();
@@ -21,41 +30,44 @@ public class Main {
             }
             titulo.mostrar("MENU PRINCIPAL");
 
-            String[] opciones = {"Rellenar Tablas", "Crear Tablas", "Borrar Todas las Tablas", "Buscar videojuegos por nombre", "Buscar Videojuegos por plataforma", "Modificar el nombre de un videojuego", "Eliminar videojuego", "Eliminar videojuego por plataforma", "Crear edicion coleccionista", "Mostrar Plataformas", "Cerrar"};
+            String[] opciones = {"Crear Tablas", "Rellenar Tablas", "Mostrar Videojuegos", "Mostrar Plataformas", "Buscar videojuegos por nombre", "Buscar Videojuegos por plataforma", "Modificar el nombre de un videojuego", "Crear edicion coleccionista", "Eliminar videojuego por nombre", "Eliminar videojuego por plataforma", "Borrar Todas las Tablas", "Cerrar"};
             int opcion = menu.elegirOpcion(opciones);
 
             switch (opcion) {
                 case 1:
-                    edicionesController.rellenar();
-                    break;
-                case 2:
                     edicionesController.crearTablas();
                     break;
+                case 2:
+                    edicionesController.rellenar();
+                    break;
                 case 3:
-                    edicionesController.borrarTablas();
+                    edicionesController.showNombreVideojuegos();
                     break;
                 case 4:
-                    edicionesController.showVideoJuegoPorNombre();
-                    break;
-                case 5:
-                    edicionesController.showVideoJuegoPorPlataforma();
-                    break;
-                case 6:
-                    edicionesController.modificarNombreVideoJuego();
-                    break;
-                case 7:
-                    edicionesController.borrarVideojuego();
-                    break;
-                case 8:
-                    edicionesController.borrarVideoJuegoPorPlataforma();
-                    break;
-                case 9:
-                    edicionesController.crearEdicionColeccionista();
-                    break;
-                case 10:
                     edicionesController.showPlataforma();
                     break;
+                case 5:
+                    edicionesController.showVideoJuegoPorNombre();
+                    break;
+                case 6:
+                    edicionesController.showVideoJuegoPorPlataforma();
+                    break;
+                case 7:
+                    edicionesController.modificarNombreVideoJuego();
+                    break;
+                case 8:
+                    edicionesController.crearEdicionColeccionista();
+                    break;
+                case 9:
+                    edicionesController.borrarVideojuegoPorNombre();
+                    break;
+                case 10:
+                    edicionesController.borrarVideoJuegoPorPlataforma();
+                    break;
                 case 11:
+                    edicionesController.borrarTablas();
+                    break;
+                case 12:
                     seguir = false;
                     break;
             }

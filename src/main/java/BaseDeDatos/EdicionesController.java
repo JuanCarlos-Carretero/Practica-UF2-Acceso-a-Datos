@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.sql.*;
-import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -15,6 +14,8 @@ public class EdicionesController {
     Scanner scan;
     Menu menu = new Menu();
     Titulo titulo;
+    Util util = new Util();
+    Mensaje mensaje = new Mensaje();
 
     /**
      * Este es el metodo constructor
@@ -36,8 +37,8 @@ public class EdicionesController {
             String linia;
 
             Statement stp = connection.createStatement();
-            stp.executeUpdate("CREATE TABLE IF NOT EXISTS plataforma(idplataforma smallint primary key, nombre varchar(20))");
-            stp.executeUpdate("CREATE TABLE IF NOT EXISTS videojuego(nombre text, tipocompra varchar(20), precio varchar(15), imagen text, idplataforma smallint references plataforma(idplataforma))");
+            stp.executeUpdate("CREATE TABLE IF NOT EXISTS plataforma(idplataforma smallint primary key, nombrePlataforma varchar(20))");
+            stp.executeUpdate("CREATE TABLE IF NOT EXISTS videojuego(nombre text, precio varchar(15), tipocompra varchar(20), imagen text, idplataforma smallint references plataforma(idplataforma))");
 
             while ((linia = br.readLine()) != null) {
                 datos = linia.split(",");
@@ -83,7 +84,7 @@ public class EdicionesController {
 
                         if((rsSize == 0)){
                             try {
-                                sql = "INSERT INTO plataforma(idplataforma, nombre) VALUES (?,?)";
+                                sql = "INSERT INTO plataforma(idplataforma, nombrePlataforma) VALUES (?,?)";
 
                                 pst = connection.prepareStatement(sql);
                                 pst.setInt(1, idPlataforma);
@@ -119,6 +120,24 @@ public class EdicionesController {
         } catch (Exception e) {
             e.getStackTrace();
         }
+
+        continuar();
+    }
+
+    /**
+     * Este metodo sirve para preguntar si quieres seguir en la app o salir
+     */
+    private void continuar() {
+        System.out.println("\n" + "¿Quieres continuar?");
+        String[] opciones = {"Si", "No"};
+        int opcion = menu.elegirOpcion(opciones);
+
+        switch (opcion) {
+            case 1:
+                break;
+            case 2:
+                System.exit(0);
+        }
     }
 
     /**
@@ -130,10 +149,10 @@ public class EdicionesController {
             titulo.mostrar("Crear videojuego");
 
             System.out.println("Nombre:");
-            String nombre = scan.nextLine();
+            String nombre = "\"" + scan.nextLine() + "\"";
 
-            System.out.println("Precio: (Ejemplo; 19 '99 €");
-            String precio = scan.nextLine();
+            System.out.println("Precio: (Ejemplo; 19 '99 €)");
+            String precio = "\"" + scan.nextLine() + "\"";
 
             System.out.println("Tipo:");
             String[] opciones = {"RESERVA", "COMPRA"};
@@ -152,7 +171,7 @@ public class EdicionesController {
             System.out.println("Imagen: (Insertar enlace a la imagen)");
             String imagen = "\"" + scan.nextLine() + "\"";
 
-            System.out.println("Plataforma:");
+            System.out.println("\n" + "Plataforma:");
             opciones = new String[]{"PLAYSTATION 4", "PLAYSTATION 5", "PC SOFTWARE", "XBOX ONE", "NINTENDO SWITCH"};
             opcion = menu.elegirOpcion(opciones);
             int idPlataforma = 0;
@@ -182,11 +201,11 @@ public class EdicionesController {
             }
 
             String sql = "INSERT INTO videojuego " +
-                    "(nom,tipocompra,precio,imagen,idplataforma) VALUES (?,?,?,?,?)";
+                    "(nombre,tipocompra,precio,imagen,idplataforma) VALUES (?,?,?,?,?)";
 
             PreparedStatement pst = connection.prepareStatement(sql);
             pst.setString(1, nombre);
-            pst.setString(2,tipoCompra);
+            pst.setString(2, tipoCompra);
             pst.setString(3, precio);
             pst.setString(4, imagen);
             pst.setInt(5, idPlataforma);
@@ -225,6 +244,8 @@ public class EdicionesController {
         }catch (SQLException e){
             e.printStackTrace();
         }
+
+        continuar();
     }
 
     /**
@@ -240,39 +261,46 @@ public class EdicionesController {
         } catch (SQLException e) {
             System.out.println("Error: La tabla videojuego no existe");
         }
+
+        continuar();
     }
 
     /**
-     * Este metodo sirve para crear la tabla videojuego
+     * Este metodo sirve para crear la tabla videojuego y la tabla videojuego
      */
     public void crearTablas(){
         try {
             Statement st = connection.createStatement();
-            st.executeUpdate("CREATE TABLE videojuego(id serial primary key, nombre varchar(20), precio varchar(20), imagen text)");
+            st.executeUpdate("CREATE TABLE IF NOT EXISTS plataforma(idplataforma smallint primary key, nombrePlataforma varchar(20))");
+            st.executeUpdate("CREATE TABLE IF NOT EXISTS videojuego(nombre text, precio varchar(15), tipocompra varchar(20), imagen text, idplataforma smallint references plataforma(idplataforma))");
             st.close();
 
         } catch (SQLException e) {
             System.out.println("Error: La tabla videojuego ya existe");
         }
+
+        continuar();
     }
 
     /**
      * Este metodo sirve para mostrar los videojuegos por un texto especifico.
      */
     public void showVideoJuegoPorNombre(){
-        ResultSet rs = null;
+        ResultSet rs;
         System.out.println("Escribe para mostrar info sobre la edicion que buscas: ");
         String nombre = scan.nextLine();
-        String sql = "SELECT * FROM videojuego WHERE nombre LIKE '%" + nombre + "%'";
+        String sql = "SELECT * FROM videojuego, plataforma WHERE nombre LIKE '%" + nombre + "%'";
 
         try{
             Statement st = connection.createStatement();
             rs = st.executeQuery(sql);
 
             while (rs.next()) {
-                System.out.println("\n" + "Nombre: " + rs.getString("nombre") + "\n" +
-                        "Precio: " + rs.getString("precio") + "\n" +
-                        "Imagen: " + rs.getString("imagen"));
+                System.out.println("\n" + util.ANSI_YELLOW + "Nombre: " + util.ANSI_RESET + rs.getString("nombre") + "\n" +
+                        util.ANSI_CYAN + "Precio: " + util.ANSI_RESET + rs.getString("precio") + "\n" +
+                        util.ANSI_PURPLE + "Imagen: " + util.ANSI_RESET + rs.getString("imagen") + "\n" +
+                        util.ANSI_GREEN + "Plataforma: " + util.ANSI_RESET + rs.getString("nombreplataforma") + "\n" +
+                        util.ANSI_RED +"Tipo: " + util.ANSI_RESET + rs.getString("tipocompra") + "\n");
             }
             rs.close();
             st.close();
@@ -280,6 +308,8 @@ public class EdicionesController {
         }catch (SQLException e){
             e.printStackTrace();
         }
+
+        continuar();
     }
 
     /**
@@ -288,19 +318,39 @@ public class EdicionesController {
     public void showVideoJuegoPorPlataforma(){
         ResultSet rs = null;
         System.out.println("Plataforma: ");
-        String plataforma = scan.nextLine().toUpperCase(Locale.ROOT);
-        String sql = "SELECT * FROM videojuego, plataforma, ids where plataforma.plataforma LIKE '%" + plataforma + "%'";
+        String[] opciones = new String[]{"PLAYSTATION 4", "PLAYSTATION 5", "PC SOFTWARE", "XBOX ONE", "NINTENDO SWITCH"};
+        int opcion = menu.elegirOpcion(opciones);
+        String plataforma = null;
+
+        switch(opcion){
+            case 1:
+                plataforma = "\"PLAYSTATION 4\"";
+                break;
+            case 2:
+                plataforma = "\"PLAYSTATION 5\"";
+                break;
+            case 3:
+                plataforma = "\"PC SOFTWARE\"";
+                break;
+            case 4:
+                plataforma = "\"XBOX ONE\"";
+                break;
+            case 5:
+                plataforma = "\"NINTENDO SWITCH\"";
+                break;
+        }
+        String sql = "SELECT * FROM videojuego, plataforma where nombreplataforma LIKE '%" + plataforma + "%'";
 
         try{
             Statement st = connection.createStatement();
             rs = st.executeQuery(sql);
 
             while (rs.next()) {
-                System.out.println("\n" + "Nombre: " + rs.getString("videojuego.nombre") + "\n" +
-                        "Precio: " + rs.getString("videojuego.precio") + "\n" +
-                        "Imagen: " + rs.getString("videojuego.imagen") + "\n" +
-                        "Plataforma: " + rs.getString("plataforma.plataforma") + "\n" +
-                        "Tipo: " + rs.getString("tipo.tipo") + "\n");
+                System.out.println("\n" + util.ANSI_YELLOW + "Nombre: " + util.ANSI_RESET + rs.getString("nombre") + "\n" +
+                        util.ANSI_CYAN + "Precio: " + util.ANSI_RESET + rs.getString("precio") + "\n" +
+                        util.ANSI_PURPLE + "Imagen: " + util.ANSI_RESET + rs.getString("imagen") + "\n" +
+                        util.ANSI_GREEN + "Plataforma: " + util.ANSI_RESET + rs.getString("nombreplataforma") + "\n" +
+                        util.ANSI_RED +"Tipo: " + util.ANSI_RESET + rs.getString("tipocompra") + "\n");
             }
 
             rs.close();
@@ -309,31 +359,8 @@ public class EdicionesController {
         }catch (SQLException e){
             e.printStackTrace();
         }
-    }
 
-    /**
-     * Este metodo sirve para mostrar los nombres de las ediciones
-     */
-    public void showCampeonNom(){
-        ResultSet rs = null;
-        String sql = "SELECT nombre FROM videojuego";
-        try{
-            Statement st = connection.createStatement();
-
-            rs = st.executeQuery(sql);
-
-            while (rs.next()) {
-                System.out.println("- " + rs.getString("nombre"));
-            }
-
-
-            rs.close();
-            st.close();
-
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
-        System.out.println("Elige el videojuego: ");
+        continuar();
     }
 
     /**
@@ -349,7 +376,7 @@ public class EdicionesController {
             rs = st.executeQuery(sql);
 
             while (rs.next()) {
-                System.out.println("Plataforma: " + rs.getString("plataforma") + "\n");
+                System.out.println("Plataforma: " + rs.getString("nombreplataforma") + "\n");
             }
 
             rs.close();
@@ -358,6 +385,34 @@ public class EdicionesController {
         }catch (SQLException e){
             System.out.println("Error: La tabla plataforma no existe");
         }
+
+        continuar();
+    }
+
+    /**
+     * Este metodo sirve para mostrar plataformas
+     */
+    public void showNombreVideojuegos(){
+        System.out.println("\n" + "Videojuego: ");
+        ResultSet rs = null;
+        String sql = "SELECT nombre, nombreplataforma FROM videojuego, plataforma";
+        try{
+            Statement st = connection.createStatement();
+
+            rs = st.executeQuery(sql);
+
+            while (rs.next()) {
+                System.out.println(util.ANSI_YELLOW + "Videojuego: " + util.ANSI_RESET + rs.getString("nombre") + "," + util.ANSI_GREEN + " Plataforma: " + util.ANSI_RESET + rs.getString("nombreplataforma") + "\n");
+            }
+
+            rs.close();
+            st.close();
+
+        }catch (SQLException e){
+            System.out.println("Error: La tabla videojuego no existe");
+        }
+
+        continuar();
     }
 
     /**
@@ -366,34 +421,38 @@ public class EdicionesController {
     public void modificarNombreVideoJuego(){
         try {
             Statement st = connection.createStatement();
-            /*Aqui tengo que poner un menu*/
-
-            String nombre = scan.nextLine();
+            System.out.println("Escribe el nombre completo del videojuego: ");
+            String nombre = "\"" +  scan.nextLine() + "\"";
             System.out.println("Escribe el nuevo nombre: ");
-            String nuevoNombre = scan.nextLine();
+            String nuevoNombre = "\"" + scan.nextLine() + "\"";
 
-            st.executeUpdate("update videojuego set nombre='" + nuevoNombre + "' where nombre='" + nombre + "'");
+            st.executeUpdate("UPDATE videojuego SET nombre='" + nuevoNombre + "' WHERE nombre='" + nombre + "'");
             st.close();
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            mensaje.mostrarError("Ese nombre no existe");
         }
+
+        continuar();
     }
 
     /**
      * Este metodo sirve para borrar un videojuego
      */
-    public void borrarVideojuego(){
+    public void borrarVideojuegoPorNombre(){
         try {
             Statement st = connection.createStatement();
             System.out.println("¿Cual quieres eliminar?: ");
+            System.out.println("(Nombre completo: Esto eliminira todos los que tengan el mismo nombre)");
             String nombre = scan.nextLine();
-            st.executeUpdate("delete from videojuego where nombre='" + nombre + "'");
+            st.executeUpdate("DELETE FROM videojuego WHERE nombre='" + nombre + "'");
             st.close();
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        continuar();
     }
 
     /**
@@ -403,12 +462,35 @@ public class EdicionesController {
         try {
             Statement st = connection.createStatement();
             System.out.println("Por cual plataforma quieres eliminar: ");
-            String plataforma = scan.nextLine();
-            st.executeUpdate("delete from videojuego, plataforma where id.plataforma='" + plataforma + "'");
+            String[] opciones = new String[]{"PLAYSTATION 4", "PLAYSTATION 5", "PC SOFTWARE", "XBOX ONE", "NINTENDO SWITCH"};
+            int opcion = menu.elegirOpcion(opciones);
+            int plataforma = 0;
+
+            switch(opcion){
+                case 1:
+                    plataforma = 1;
+                    break;
+                case 2:
+                    plataforma = 2;
+                    break;
+                case 3:
+                    plataforma = 3;
+                    break;
+                case 4:
+                    plataforma = 4;
+                    break;
+                case 5:
+                    plataforma = 5;
+                    break;
+            }
+            st.executeUpdate("delete from videojuego where idplataforma='" + plataforma + "'");
+            st.executeUpdate("delete from plataforma where idplataforma='" + plataforma + "'");
             st.close();
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        continuar();
     }
 }
