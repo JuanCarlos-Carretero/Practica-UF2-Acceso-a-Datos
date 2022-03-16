@@ -1,4 +1,4 @@
-package BaseDeDatos;
+package JBC;
 
 import java.io.BufferedReader;
 import java.io.File;

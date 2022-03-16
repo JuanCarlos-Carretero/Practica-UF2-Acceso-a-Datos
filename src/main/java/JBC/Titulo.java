@@ -1,4 +1,4 @@
-package BaseDeDatos;
+package JBC;
 
 
 import WebScrapping.Util;

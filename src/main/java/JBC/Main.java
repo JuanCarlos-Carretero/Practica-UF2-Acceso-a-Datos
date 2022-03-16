@@ -1,4 +1,4 @@
-package BaseDeDatos;
+package JBC;
 
 import java.sql.Connection;
 import java.util.Scanner;
