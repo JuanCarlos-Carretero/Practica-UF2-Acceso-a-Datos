@@ -1,4 +1,4 @@
-package JBC;
+package JDBC;
 
 import WebScrapping.Util;
 

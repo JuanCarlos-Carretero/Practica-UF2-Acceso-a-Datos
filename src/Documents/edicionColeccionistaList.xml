@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<EdicionesColeccionistas>
+<WebScrapping.EdicionesColeccionistas>
     <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/193/193851.png</Imagen>
         <Nombre>Horizon Forbidden West Edicion Coleccionista</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>10 €</Precio>
-        <Tipo>RESERVAR</Tipo>
+        <Precio>199 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/191/191665.png</Imagen>
-        <Nombre>AI The Somnium Files nirvanA Initiative Collector´s Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>5 €</Precio>
-        <Tipo>RESERVAR</Tipo>
+        <Imagen>https://media.game.es/COVERV2/3D_L/196/196770.png</Imagen>
+        <Nombre>Elden Ring Edicion Coleccionista</Nombre>
+        <Plataforma>PLAYSTATION 5</Plataforma>
+        <Precio>199 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170211.png</Imagen>
-        <Nombre>Zenith: Collector's Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>3 €</Precio>
-        <Tipo>RESERVAR</Tipo>
+        <Imagen>https://media.game.es/COVERV2/3D_L/196/196771.png</Imagen>
+        <Nombre>Elden Ring Edicion Coleccionista</Nombre>
+        <Plataforma>PC SOFTWARE</Plataforma>
+        <Precio>199 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/191/191164.png</Imagen>
-        <Nombre>Danganronpa Decadence Collector’s Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>99 '95 €</Precio>
+        <Imagen>https://media.game.es/COVERV2/3D_L/196/196769.png</Imagen>
+        <Nombre>Elden Ring Edicion Coleccionista</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>199 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -36,16 +36,37 @@
         <Tipo>RESERVAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/191/191664.png</Imagen>
-        <Nombre>AI The Somnium Files nirvanA Initiative Collector´s Edition</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>5 €</Precio>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170211.png</Imagen>
+        <Nombre>Zenith: Collector's Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>3 €</Precio>
         <Tipo>RESERVAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170215.png</Imagen>
-        <Nombre>Distrust: Collector's Edition</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/199/199744.png</Imagen>
+        <Nombre>Final Vendetta Collectors Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>3 €</Precio>
+        <Tipo>RESERVAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/189/189777.png</Imagen>
+        <Nombre>Made In Abbys - Collectors Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>3 €</Precio>
+        <Tipo>RESERVAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/189/189776.png</Imagen>
+        <Nombre>Made In Abbys - Collectors Edition</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>3 €</Precio>
+        <Tipo>RESERVAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/199/199742.png</Imagen>
+        <Nombre>Final Vendetta Collectors Edition</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
         <Precio>3 €</Precio>
         <Tipo>RESERVAR</Tipo>
     </VideoJuego>
@@ -64,10 +85,31 @@
         <Tipo>RESERVAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/189/189990.png</Imagen>
-        <Nombre>Marvel's Guardians of the Galaxy Edición Cósmica Deluxe</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170215.png</Imagen>
+        <Nombre>Distrust: Collector's Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>3 €</Precio>
+        <Tipo>RESERVAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/196/196768.png</Imagen>
+        <Nombre>Elden Ring Edicion Coleccionista</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>64 '95 €</Precio>
+        <Precio>199 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/199/199743.png</Imagen>
+        <Nombre>Final Vendetta Collectors Edition</Nombre>
+        <Plataforma>PLAYSTATION 5</Plataforma>
+        <Precio>3 €</Precio>
+        <Tipo>RESERVAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/168/168908.png</Imagen>
+        <Nombre>Cyberpunk 2077 Edición Coleccionista</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>99 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -78,23 +120,58 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/189/189991.png</Imagen>
-        <Nombre>Marvel's Guardians of the Galaxy Edición Cósmica Deluxe</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
-        <Precio>69 '95 €</Precio>
+        <Imagen>https://media.game.es/COVERV2/3D_L/162/162517.png</Imagen>
+        <Nombre>Final Fantasy XII The Zodiac Age</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>24 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/184/184014.png</Imagen>
-        <Nombre>Blasphemous - Edición Coleccionista</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>79 '95 €</Precio>
+        <Imagen>https://media.game.es/COVERV2/3D_L/190/190472.png</Imagen>
+        <Nombre>Dying Light 2 Stay Human Collector's Edition</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>229 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/189/189991.png</Imagen>
+        <Nombre>Marvel's Guardians of the Galaxy Edición Cósmica Deluxe</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>49 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/182/182508.png</Imagen>
         <Nombre>Neversong - Collector´s Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>49 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/189/189990.png</Imagen>
+        <Nombre>Marvel's Guardians of the Galaxy Edición Cósmica Deluxe</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>49 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/191/191164.png</Imagen>
+        <Nombre>Danganronpa Decadence Collector’s Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>99 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/184/184014.png</Imagen>
+        <Nombre>Blasphemous - Edición Coleccionista</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>69 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/190/190457.png</Imagen>
+        <Nombre>A Tale of Synapse Collector's Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
         <Precio>49 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
@@ -106,20 +183,6 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/191/191296.png</Imagen>
-        <Nombre>Farming Simulator 22 Edicion Coleccionista</Nombre>
-        <Plataforma>PC SOFTWARE</Plataforma>
-        <Precio>69 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/168/168908.png</Imagen>
-        <Nombre>Cyberpunk 2077 Edición Coleccionista</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>199 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/182/182801.png</Imagen>
         <Nombre>Crypt of the Necrodancer Collector´s Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
@@ -127,10 +190,10 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/183/183875.png</Imagen>
-        <Nombre>Mortal Kombat 11 Ultimate Kollector's Edition</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/188/188958.png</Imagen>
+        <Nombre>Alex Kidd in Miracle World DX Signature Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>109 '95 €</Precio>
+        <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -148,20 +211,6 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170217.png</Imagen>
-        <Nombre>Do not Feed the Monkeys: Collector's Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>44 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/188/188958.png</Imagen>
-        <Nombre>Alex Kidd in Miracle World DX Signature Edition</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>69 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/142/142166.png</Imagen>
         <Nombre>Biomutant Collector´s Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
@@ -169,24 +218,10 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/142/142167.png</Imagen>
-        <Nombre>Biomutant Collector´s Edition</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
-        <Precio>109 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/184/184012.png</Imagen>
-        <Nombre>Blasphemous - Edición Coleccionista</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/191/191793.png</Imagen>
+        <Nombre>Asterix &amp; Obelix Slap Them All Edicion Coleccionista</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
         <Precio>79 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/168/168910.png</Imagen>
-        <Nombre>Cyberpunk 2077 Edicion Coleccionista</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
-        <Precio>199 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -197,17 +232,24 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/182/182507.png</Imagen>
-        <Nombre>Neversong - Collector´s Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>49 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/189/189537.png</Imagen>
         <Nombre>Sword of the Necromancer Edición Coleccionista</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
         <Precio>59 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/189/189538.png</Imagen>
+        <Nombre>Sword of the Necromancer Edición Coleccionista</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>59 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/191/191296.png</Imagen>
+        <Nombre>Farming Simulator 22 Edicion Coleccionista</Nombre>
+        <Plataforma>PC SOFTWARE</Plataforma>
+        <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -225,10 +267,10 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/180/180269.png</Imagen>
-        <Nombre>House Flipper Signature Edition</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/184/184012.png</Imagen>
+        <Nombre>Blasphemous - Edición Coleccionista</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>54 '95 €</Precio>
+        <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -246,6 +288,13 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/182/182507.png</Imagen>
+        <Nombre>Neversong - Collector´s Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>49 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/180/180270.png</Imagen>
         <Nombre>House Flipper Signature Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
@@ -256,12 +305,12 @@
         <Imagen>https://media.game.es/COVERV2/3D_L/177/177535.png</Imagen>
         <Nombre>1971 Project Helios Collector´S Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>39 '95 €</Precio>
+        <Precio>29 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/191/191968.png</Imagen>
-        <Nombre>Los Pitufos Operación Vilhoja Edición Collector</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/191/191794.png</Imagen>
+        <Nombre>Asterix &amp; Obelix Slap Them All Edicion Coleccionista</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
         <Precio>79 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
@@ -277,7 +326,7 @@
         <Imagen>https://media.game.es/COVERV2/3D_L/191/191963.png</Imagen>
         <Nombre>Gearshifters Collector's Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>49 '95 €</Precio>
+        <Precio>34 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -288,16 +337,16 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/166/166777.png</Imagen>
-        <Nombre>Dragon Ball Z: Kakarot Collector Edition</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/191/191962.png</Imagen>
+        <Nombre>Gearshifters Collector's Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>239 '95 €</Precio>
+        <Precio>34 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/166/166779.png</Imagen>
+        <Imagen>https://media.game.es/COVERV2/3D_L/166/166777.png</Imagen>
         <Nombre>Dragon Ball Z: Kakarot Collector Edition</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
+        <Plataforma>PLAYSTATION 4</Plataforma>
         <Precio>239 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
@@ -316,13 +365,6 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/171/171806.png</Imagen>
-        <Nombre>AI:Somnium Files Edicion Coleccionista</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>69 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/171/171688.png</Imagen>
         <Nombre>Destroy All Humans! DNA Collector's Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
@@ -337,30 +379,23 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/171/171806.png</Imagen>
+        <Nombre>AI:Somnium Files Edicion Coleccionista</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>69 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/177/177534.png</Imagen>
         <Nombre>1971 Project Helios Collector´S Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>34 '95 €</Precio>
+        <Precio>29 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/178/178434.png</Imagen>
-        <Nombre>Dead Cells The Prisioner's Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>119 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/180/180590.png</Imagen>
-        <Nombre>Captain Tsubasa: Rise of new Champions Ed Col</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>99 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170213.png</Imagen>
-        <Nombre>Beholder CE: Collector's Edition</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Imagen>https://media.game.es/COVERV2/3D_L/177/177536.png</Imagen>
+        <Nombre>1971 Project Helios Collector´S Edition</Nombre>
+        <Plataforma>PC SOFTWARE</Plataforma>
         <Precio>29 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
@@ -372,10 +407,24 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/179/179138.png</Imagen>
-        <Nombre>Bounty Battle Signature Edition</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/178/178434.png</Imagen>
+        <Nombre>Dead Cells The Prisioner's Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>54 '95 €</Precio>
+        <Precio>119 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/181/181265.png</Imagen>
+        <Nombre>Kingdoms of Amalur Re-Reckoning - Edición Coleccionista</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>109 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/180/180590.png</Imagen>
+        <Nombre>Captain Tsubasa: Rise of new Champions Ed Col</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>99 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -386,17 +435,10 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/177/177536.png</Imagen>
-        <Nombre>1971 Project Helios Collector´S Edition</Nombre>
-        <Plataforma>PC SOFTWARE</Plataforma>
-        <Precio>29 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170728.png</Imagen>
-        <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170213.png</Imagen>
+        <Nombre>Beholder CE: Collector's Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>79 '95 €</Precio>
+        <Precio>29 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -410,49 +452,28 @@
         <Imagen>https://media.game.es/COVERV2/3D_L/171/171561.png</Imagen>
         <Nombre>WRC 8 Edición Coleccionista</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>39 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/178/178952.png</Imagen>
-        <Nombre>Dungeons of the Endless Signature Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>54 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/177/177339.png</Imagen>
-        <Nombre>The Elder Scrolls Online Greymoor Collector’s Upgrade</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>99 '95 €</Precio>
+        <Precio>44 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/170/170732.png</Imagen>
         <Nombre>NeverWinter Nights Enhanced Edition Edición Coleccionista</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>79 '95 €</Precio>
+        <Precio>69 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170734.png</Imagen>
+        <Nombre>Icewind Dale Enhanced Edition Edición Colecionista</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/170/170735.png</Imagen>
         <Nombre>Icewind Dale Enhanced Edition Edición Colecionista</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>79 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/171/171679.png</Imagen>
-        <Nombre>Asterix y Obelix XXL 3 The Crystal Menhir Collector Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>59 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/171/171680.png</Imagen>
-        <Nombre>Asterix y Obelix XXL 3 The Crystal Menhir Collector Edition</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>59 '95 €</Precio>
+        <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -470,6 +491,20 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/171/171680.png</Imagen>
+        <Nombre>Asterix y Obelix XXL 3 The Crystal Menhir Collector Edition</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>49 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/171/171562.png</Imagen>
+        <Nombre>WRC 8 Edición Coleccionista</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>44 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/163/163908.png</Imagen>
         <Nombre>Monster Jam Steel Titans - Collector's Edition</Nombre>
         <Plataforma>XBOX ONE</Plataforma>
@@ -477,31 +512,24 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/189/189989.png</Imagen>
-        <Nombre>Marvel's Guardians of the Galaxy Edición Cósmica Deluxe</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/186/186789.png</Imagen>
+        <Nombre>Terminator: Resistance Enhanced - Collector´s Edition</Nombre>
         <Plataforma>PLAYSTATION 5</Plataforma>
-        <Precio>69 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/152/152684.png</Imagen>
-        <Nombre>Asterix y Obelix XXL2 Collector Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>69 '95 €</Precio>
+        <Precio>39 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/188/188549.png</Imagen>
         <Nombre>Oddworld Soulstorm - Day One Oddition</Nombre>
         <Plataforma>PLAYSTATION 5</Plataforma>
-        <Precio>49 '95 €</Precio>
+        <Precio>34 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/186/186789.png</Imagen>
-        <Nombre>Terminator: Resistance Enhanced - Collector´s Edition</Nombre>
-        <Plataforma>PLAYSTATION 5</Plataforma>
-        <Precio>49 '95 €</Precio>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170217.png</Imagen>
+        <Nombre>Do not Feed the Monkeys: Collector's Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>44 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -512,30 +540,16 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/191/191962.png</Imagen>
-        <Nombre>Gearshifters Collector's Edition</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>49 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/189/189538.png</Imagen>
-        <Nombre>Sword of the Necromancer Edición Coleccionista</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>59 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/190/190457.png</Imagen>
-        <Nombre>A Tale of Synapse Collector's Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>49 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/142/142165.png</Imagen>
         <Nombre>Biomutant Collector´s Edition</Nombre>
         <Plataforma>PC SOFTWARE</Plataforma>
+        <Precio>109 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/142/142167.png</Imagen>
+        <Nombre>Biomutant Collector´s Edition</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
         <Precio>109 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
@@ -568,24 +582,17 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/179/179138.png</Imagen>
+        <Nombre>Bounty Battle Signature Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>54 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/179/179137.png</Imagen>
         <Nombre>Bounty Battle Signature Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
         <Precio>49 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/181/181265.png</Imagen>
-        <Nombre>Kingdoms of Amalur Re-Reckoning - Edición Coleccionista</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
-        <Precio>109 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/181/181327.png</Imagen>
-        <Nombre>Kingdoms of Amalur Re-Reckoning - Edición Coleccionista</Nombre>
-        <Plataforma>PC SOFTWARE</Plataforma>
-        <Precio>99 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -600,6 +607,13 @@
         <Nombre>Captain Tsubasa: Rise of new Champions Ed Col (REACONDICIONADO)</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
         <Precio>84 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/180/180269.png</Imagen>
+        <Nombre>House Flipper Signature Edition</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>54 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -631,24 +645,10 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/174/174932.png</Imagen>
-        <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - F.U.N Edition</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/178/178952.png</Imagen>
+        <Nombre>Dungeons of the Endless Signature Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>299 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/174/174929.png</Imagen>
-        <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - F.U.N Edition</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>219 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/174/174930.png</Imagen>
-        <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - F.U.N Edition</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
-        <Precio>219 '95 €</Precio>
+        <Precio>54 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -666,10 +666,24 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/179/179819.png</Imagen>
-        <Nombre>Desperados III - Collector's Edition</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/174/174929.png</Imagen>
+        <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - F.U.N Edition</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>219 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/174/174930.png</Imagen>
+        <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - F.U.N Edition</Nombre>
         <Plataforma>XBOX ONE</Plataforma>
-        <Precio>94 '95 €</Precio>
+        <Precio>219 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/174/174932.png</Imagen>
+        <Nombre>Bob Esponja Battle for Bikini Bottom - Rehydrated - F.U.N Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>299 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -677,6 +691,20 @@
         <Nombre>Desperados III - Collector's Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
         <Precio>94 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/179/179819.png</Imagen>
+        <Nombre>Desperados III - Collector's Edition</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>94 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/177/177339.png</Imagen>
+        <Nombre>The Elder Scrolls Online Greymoor Collector’s Upgrade</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>99 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -694,13 +722,6 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/178/178886.png</Imagen>
-        <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista (REACONDICIONADO)</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>69 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/187/187308.png</Imagen>
         <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista (REACONDICIONADO)</Nombre>
         <Plataforma>XBOX ONE</Plataforma>
@@ -708,9 +729,16 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170733.png</Imagen>
-        <Nombre>NeverWinter Nights Enhanced Edition Edición Coleccionista</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
+        <Imagen>https://media.game.es/COVERV2/3D_L/178/178886.png</Imagen>
+        <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista (REACONDICIONADO)</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>69 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170728.png</Imagen>
+        <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
         <Precio>79 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
@@ -722,13 +750,6 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/179/179083.png</Imagen>
-        <Nombre>NeverWinter Nights Enhanced Edition Edicion Coleccionista (REACONDICIONADO)</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>69 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/184/184862.png</Imagen>
         <Nombre>NeverWinter Nights Enhanced Edition Edición Coleccionista (REACONDICIONADO)</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
@@ -736,17 +757,31 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170731.png</Imagen>
-        <Nombre>NeverWinter Nights Enhanced Edition Edicion Coleccionista</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/179/179083.png</Imagen>
+        <Nombre>NeverWinter Nights Enhanced Edition Edicion Coleccionista (REACONDICIONADO)</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>79 '95 €</Precio>
+        <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170736.png</Imagen>
-        <Nombre>Icewind Dale Enhanced Edition Edición Colecionista</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170731.png</Imagen>
+        <Nombre>NeverWinter Nights Enhanced Edition Edicion Coleccionista</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>69 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170733.png</Imagen>
+        <Nombre>NeverWinter Nights Enhanced Edition Edición Coleccionista</Nombre>
         <Plataforma>XBOX ONE</Plataforma>
-        <Precio>79 '95 €</Precio>
+        <Precio>69 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/199/199953.png</Imagen>
+        <Nombre>Icewind Dale Enhanced Edition Edición Colecionista (REACONDICIONADO)</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -764,10 +799,17 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170734.png</Imagen>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170736.png</Imagen>
         <Nombre>Icewind Dale Enhanced Edition Edición Colecionista</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>69 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/177/177950.png</Imagen>
+        <Nombre>Dragon Ball Z: Kakarot Collector Edition (REACONDICIONADO)</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>79 '95 €</Precio>
+        <Precio>134 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -778,17 +820,24 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/166/166779.png</Imagen>
+        <Nombre>Dragon Ball Z: Kakarot Collector Edition</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>239 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/171/171679.png</Imagen>
+        <Nombre>Asterix y Obelix XXL 3 The Crystal Menhir Collector Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>49 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/185/185536.png</Imagen>
         <Nombre>Lovecraft Untold Stories: Collector's Edition (REACONDICIONADO)</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
         <Precio>29 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/171/171562.png</Imagen>
-        <Nombre>WRC 8 Edición Coleccionista</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
-        <Precio>59 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -827,6 +876,13 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/152/152684.png</Imagen>
+        <Nombre>Asterix y Obelix XXL2 Collector Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>59 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/159/159856.png</Imagen>
         <Nombre>Elder Scrolls Online Summerset Collectors Edition (REACONDICIONADO)</Nombre>
         <Plataforma>XBOX ONE</Plataforma>
@@ -840,4 +896,4 @@
         <Precio>7 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
-</EdicionesColeccionistas>
+</WebScrapping.EdicionesColeccionistas>
