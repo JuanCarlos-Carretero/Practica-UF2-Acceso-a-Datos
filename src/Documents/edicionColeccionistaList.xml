@@ -92,13 +92,6 @@
         <Tipo>RESERVAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/196/196768.png</Imagen>
-        <Nombre>Elden Ring Edicion Coleccionista</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>199 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/199/199743.png</Imagen>
         <Nombre>Final Vendetta Collectors Edition</Nombre>
         <Plataforma>PLAYSTATION 5</Plataforma>
@@ -106,10 +99,10 @@
         <Tipo>RESERVAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/168/168908.png</Imagen>
-        <Nombre>Cyberpunk 2077 Edición Coleccionista</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/190/190470.png</Imagen>
+        <Nombre>Dying Light 2 Stay Human Collector's Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>99 '95 €</Precio>
+        <Precio>229 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -137,19 +130,19 @@
         <Imagen>https://media.game.es/COVERV2/3D_L/189/189991.png</Imagen>
         <Nombre>Marvel's Guardians of the Galaxy Edición Cósmica Deluxe</Nombre>
         <Plataforma>XBOX ONE</Plataforma>
-        <Precio>49 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/182/182508.png</Imagen>
-        <Nombre>Neversong - Collector´s Edition</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>49 '95 €</Precio>
+        <Precio>79 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/189/189990.png</Imagen>
         <Nombre>Marvel's Guardians of the Galaxy Edición Cósmica Deluxe</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>79 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/182/182508.png</Imagen>
+        <Nombre>Neversong - Collector´s Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
         <Precio>49 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
@@ -169,6 +162,20 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/191/191963.png</Imagen>
+        <Nombre>Gearshifters Collector's Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>34 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/190/190471.png</Imagen>
+        <Nombre>Dying Light 2 Stay Human Collector's Edition</Nombre>
+        <Plataforma>PLAYSTATION 5</Plataforma>
+        <Precio>229 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/190/190457.png</Imagen>
         <Nombre>A Tale of Synapse Collector's Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
@@ -183,10 +190,10 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/182/182801.png</Imagen>
-        <Nombre>Crypt of the Necrodancer Collector´s Edition</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170214.png</Imagen>
+        <Nombre>Beholder Complete Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>39 '95 €</Precio>
+        <Precio>34 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -204,10 +211,10 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170214.png</Imagen>
-        <Nombre>Beholder Complete Edition</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/182/182801.png</Imagen>
+        <Nombre>Crypt of the Necrodancer Collector´s Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>34 '95 €</Precio>
+        <Precio>39 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -260,17 +267,17 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/178/178433.png</Imagen>
-        <Nombre>Dead Cells The Prisioner's Edition</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>119 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/184/184012.png</Imagen>
         <Nombre>Blasphemous - Edición Coleccionista</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
         <Precio>69 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/178/178433.png</Imagen>
+        <Nombre>Dead Cells The Prisioner's Edition</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>119 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -295,13 +302,6 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/180/180270.png</Imagen>
-        <Nombre>House Flipper Signature Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>59 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/177/177535.png</Imagen>
         <Nombre>1971 Project Helios Collector´S Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
@@ -320,13 +320,6 @@
         <Nombre>Hard West: Collector's Edition</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
         <Precio>39 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/191/191963.png</Imagen>
-        <Nombre>Gearshifters Collector's Edition</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
-        <Precio>34 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -365,6 +358,13 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/177/177534.png</Imagen>
+        <Nombre>1971 Project Helios Collector´S Edition</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>29 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/171/171688.png</Imagen>
         <Nombre>Destroy All Humans! DNA Collector's Edition</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
@@ -383,13 +383,6 @@
         <Nombre>AI:Somnium Files Edicion Coleccionista</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
         <Precio>69 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/177/177534.png</Imagen>
-        <Nombre>1971 Project Helios Collector´S Edition</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>29 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -449,6 +442,13 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/177/177339.png</Imagen>
+        <Nombre>The Elder Scrolls Online Greymoor Collector’s Upgrade</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>99 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/171/171561.png</Imagen>
         <Nombre>WRC 8 Edición Coleccionista</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
@@ -466,13 +466,6 @@
         <Imagen>https://media.game.es/COVERV2/3D_L/170/170734.png</Imagen>
         <Nombre>Icewind Dale Enhanced Edition Edición Colecionista</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>69 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170735.png</Imagen>
-        <Nombre>Icewind Dale Enhanced Edition Edición Colecionista</Nombre>
-        <Plataforma>NINTENDO SWITCH</Plataforma>
         <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
@@ -610,17 +603,24 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/180/180269.png</Imagen>
-        <Nombre>House Flipper Signature Edition</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>54 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/189/189608.png</Imagen>
         <Nombre>House Flipper Signature Edition (REACONDICIONADO)</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
         <Precio>49 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/180/180270.png</Imagen>
+        <Nombre>House Flipper Signature Edition</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
+        <Precio>59 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/180/180269.png</Imagen>
+        <Nombre>House Flipper Signature Edition</Nombre>
+        <Plataforma>PLAYSTATION 4</Plataforma>
+        <Precio>54 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -701,13 +701,6 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/177/177339.png</Imagen>
-        <Nombre>The Elder Scrolls Online Greymoor Collector’s Upgrade</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>99 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/177/177340.png</Imagen>
         <Nombre>The Elder Scrolls Online Greymoor Collector’s Upgrade</Nombre>
         <Plataforma>XBOX ONE</Plataforma>
@@ -715,16 +708,16 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/178/178598.png</Imagen>
-        <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista (REACONDICIONADO)</Nombre>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170728.png</Imagen>
+        <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista</Nombre>
         <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>69 '95 €</Precio>
+        <Precio>79 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/187/187308.png</Imagen>
+        <Imagen>https://media.game.es/COVERV2/3D_L/178/178598.png</Imagen>
         <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista (REACONDICIONADO)</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
+        <Plataforma>PLAYSTATION 4</Plataforma>
         <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
@@ -736,10 +729,17 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170728.png</Imagen>
-        <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista</Nombre>
-        <Plataforma>PLAYSTATION 4</Plataforma>
-        <Precio>79 '95 €</Precio>
+        <Imagen>https://media.game.es/COVERV2/3D_L/187/187308.png</Imagen>
+        <Nombre>Baldur´s Gate Enhanced Edition Pack Edición Coleccionista (REACONDICIONADO)</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>69 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170733.png</Imagen>
+        <Nombre>NeverWinter Nights Enhanced Edition Edición Coleccionista</Nombre>
+        <Plataforma>XBOX ONE</Plataforma>
+        <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
@@ -771,13 +771,6 @@
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>
     <VideoJuego>
-        <Imagen>https://media.game.es/COVERV2/3D_L/170/170733.png</Imagen>
-        <Nombre>NeverWinter Nights Enhanced Edition Edición Coleccionista</Nombre>
-        <Plataforma>XBOX ONE</Plataforma>
-        <Precio>69 '95 €</Precio>
-        <Tipo>COMPRAR</Tipo>
-    </VideoJuego>
-    <VideoJuego>
         <Imagen>https://media.game.es/COVERV2/3D_L/199/199953.png</Imagen>
         <Nombre>Icewind Dale Enhanced Edition Edición Colecionista (REACONDICIONADO)</Nombre>
         <Plataforma>NINTENDO SWITCH</Plataforma>
@@ -795,6 +788,13 @@
         <Imagen>https://media.game.es/COVERV2/3D_L/187/187750.png</Imagen>
         <Nombre>Icewind Dale Enhanced Edition Edición Colecionista (REACONDICIONADO)</Nombre>
         <Plataforma>XBOX ONE</Plataforma>
+        <Precio>69 '95 €</Precio>
+        <Tipo>COMPRAR</Tipo>
+    </VideoJuego>
+    <VideoJuego>
+        <Imagen>https://media.game.es/COVERV2/3D_L/170/170735.png</Imagen>
+        <Nombre>Icewind Dale Enhanced Edition Edición Colecionista</Nombre>
+        <Plataforma>NINTENDO SWITCH</Plataforma>
         <Precio>69 '95 €</Precio>
         <Tipo>COMPRAR</Tipo>
     </VideoJuego>

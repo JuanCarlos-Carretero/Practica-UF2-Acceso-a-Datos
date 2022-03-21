@@ -1,4 +1,6 @@
-package WebScrapping;
+package Util;
+
+import java.util.Scanner;
 
 /**
  * Esta clase sirve para crear menus.
@@ -9,7 +11,8 @@ public class Menu {
      * @param opciones le paso un arraylist con las opciones a mostrar.
      * @return Retorna lo que haya escrito el usuario.
      */
-    String elegirOpcion(String[] opciones){
+    Scanner scan = new Scanner(System.in);
+    public String elegirOpcion(String[] opciones){
 
         boolean seguirPidiendo = true;
         String opcion = " ";
@@ -20,7 +23,7 @@ public class Menu {
         }
         while(seguirPidiendo) {
             System.out.println("\nOpcion:");
-            opcion = Main.scan.nextLine();
+            opcion = scan.nextLine();
 
             try {
                 if (Integer.parseInt(opcion) > opciones.length) {

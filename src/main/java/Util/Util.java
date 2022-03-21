@@ -1,4 +1,4 @@
-package JDBC;
+package Util;
 
 /**
  * Esta clase es un cajon desastre, aqui es donde se mete todo lo que no tiene nombre propio y que no tiene sentido meter en ninguna otra clase.

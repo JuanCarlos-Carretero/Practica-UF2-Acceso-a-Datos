@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"JDBC"},{"l":"WebScrapping"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"Hibernate"},{"l":"InicioApp"},{"l":"JDBC"},{"l":"Util"},{"l":"WebScrapping"}];updateSearchResults();

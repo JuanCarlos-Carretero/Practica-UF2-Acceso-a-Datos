@@ -1,20 +1,24 @@
 package JDBC;
 
+import Util.Menu;
+import Util.Titulo;
+import Util.Util;
+
 import java.sql.Connection;
 import java.util.Scanner;
+
 /**
- * La clase Main es la primera que se va a ejecutar.
- * @version 5.0, 30/01/22
- * @author Juan Carlos Carretero Roldan
+ * Esta clase sirve para runear el jdbc
  */
 
-public class Main {
+public class JDBC implements Runnable {
     public static Scanner scan = new Scanner(System.in);
 
     /**
-     * Este metodo permite lanzar la app.
+     * Este metodo permite lanzar el jdbc
      */
-    public static void main(String[] args) {
+    @Override
+    public void run() {
         Menu menu = new Menu();
         Titulo titulo = new Titulo();
         boolean seguir = true;
@@ -31,7 +35,7 @@ public class Main {
             titulo.mostrar("MENU PRINCIPAL");
 
             String[] opciones = {"Crear Tablas", "Rellenar Tablas", "Mostrar Videojuegos", "Mostrar Plataformas", "Buscar videojuegos por nombre", "Buscar Videojuegos por plataforma", "Modificar el nombre de un videojuego", "Crear edicion coleccionista", "Eliminar videojuego por nombre", "Eliminar videojuego por plataforma", "Borrar Todas las Tablas", "Cerrar"};
-            int opcion = menu.elegirOpcion(opciones);
+            int opcion = Integer.parseInt(menu.elegirOpcion(opciones));
 
             switch (opcion) {
                 case 1:

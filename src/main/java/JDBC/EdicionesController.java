@@ -1,5 +1,10 @@
 package JDBC;
 
+import Util.Mensaje;
+import Util.Menu;
+import Util.Titulo;
+import Util.Util;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -130,7 +135,7 @@ public class EdicionesController {
     private void continuar() {
         System.out.println("\n" + "¿Quieres continuar?");
         String[] opciones = {"Si", "No"};
-        int opcion = menu.elegirOpcion(opciones);
+        int opcion = Integer.parseInt(menu.elegirOpcion(opciones));
 
         switch (opcion) {
             case 1:
@@ -156,7 +161,7 @@ public class EdicionesController {
 
             System.out.println("Tipo:");
             String[] opciones = {"RESERVA", "COMPRA"};
-            int opcion = menu.elegirOpcion(opciones);
+            int opcion = Integer.parseInt(menu.elegirOpcion(opciones));
             String tipoCompra = null;
 
             switch (opcion){
@@ -173,7 +178,7 @@ public class EdicionesController {
 
             System.out.println("\n" + "Plataforma:");
             opciones = new String[]{"PLAYSTATION 4", "PLAYSTATION 5", "PC SOFTWARE", "XBOX ONE", "NINTENDO SWITCH"};
-            opcion = menu.elegirOpcion(opciones);
+            opcion = Integer.parseInt(menu.elegirOpcion(opciones));
             int idPlataforma = 0;
             String plataforma = null;
 
@@ -319,7 +324,7 @@ public class EdicionesController {
         ResultSet rs = null;
         System.out.println("Plataforma: ");
         String[] opciones = new String[]{"PLAYSTATION 4", "PLAYSTATION 5", "PC SOFTWARE", "XBOX ONE", "NINTENDO SWITCH"};
-        int opcion = menu.elegirOpcion(opciones);
+        int opcion = Integer.parseInt(menu.elegirOpcion(opciones));
         String plataforma = null;
 
         switch(opcion){
@@ -463,7 +468,7 @@ public class EdicionesController {
             Statement st = connection.createStatement();
             System.out.println("Por cual plataforma quieres eliminar: ");
             String[] opciones = new String[]{"PLAYSTATION 4", "PLAYSTATION 5", "PC SOFTWARE", "XBOX ONE", "NINTENDO SWITCH"};
-            int opcion = menu.elegirOpcion(opciones);
+            int opcion = Integer.parseInt(menu.elegirOpcion(opciones));
             int plataforma = 0;
 
             switch(opcion){

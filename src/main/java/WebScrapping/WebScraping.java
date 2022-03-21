@@ -1,5 +1,7 @@
 package WebScrapping;
 
+import Util.Mensaje;
+import Util.Titulo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,7 +29,7 @@ public class WebScraping implements Runnable {
     File fileJAXB = new File("src/Documents/edicionColeccionistaList.xml");
 
     /**
-     * Este metodo es llamado en la clase WebScrapping.Main dentro del metodo main para iniciar la app.
+     * Este metodo es llamado en la clase WebScrapping.InicioApp.Main dentro del metodo main para iniciar la app.
      */
     @Override
     public void run() {

@@ -1,7 +1,6 @@
-package JDBC;
+package Util;
 
-
-import WebScrapping.Util;
+import Util.Util;
 
 /**
  * Esta clase crea un titulo para la app.
@@ -11,8 +10,8 @@ public class Titulo {
      * El metodo mostrar() sirve para mostrar por terminal un titulo.
      * @param titulo recibe un texto para colocarlo como titulo dentro de la app.
      */
-    void mostrar(String titulo){
-        WebScrapping.Util util = new Util();
+    public void mostrar(String titulo){
+        Util util = new Util();
 
         String color = util.ANSI_GREEN;
         char[] charArray = titulo.toCharArray();
