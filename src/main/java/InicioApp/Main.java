@@ -9,6 +9,7 @@ import WebScrapping.Scrapping;
 
 /**
  * La clase InicioApp.Main es la primera que se va a ejecutar.
+ * Inspirated from Xatung0's and Rusben's Practice(and helped from TuChinoFavorito).
  *
  * @author Juan Carlos Carretero Roldan
  * @version 5.0, 30/01/22
@@ -25,7 +26,7 @@ public class Main {
         String[] opciones = {"WebScrapping", "JDBC", "Hibernate", "Salir"};
         int opcion = Integer.parseInt(menu.elegirOpcion(opciones));
 
-        switch(opcion){
+        switch (opcion) {
             case 1:
                 Scrapping scrapping = new Scrapping();
                 util.saltoLineaX(20);
